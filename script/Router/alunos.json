@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "João Silva",
+    "matricula": "2021001",
+    "senha": "aluno123"
+  },
+  {
+    "nome": "Maria Souza",
+    "matricula": "2021002",
+    "senha": "aluno456"
+  },
+  {
+    "nome": "Pedro Oliveira",
+    "matricula": "2021003",
+    "senha": "aluno789"
+  },
+  {
+    "nome": "Ana Costa",
+    "matricula": "2021004",
+    "senha": "aluno321"
+  },
+  {
+    "nome": "Lucas Lima",
+    "matricula": "2021005",
+    "senha": "aluno654"
+  }
+]

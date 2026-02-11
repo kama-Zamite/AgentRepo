@@ -8,10 +8,8 @@
 </head>
 <body>
     <div id="containerCadastro">
- 
         <h3>Register</h3>
-        
-        <form >
+        <form id="register-form" novalidate>
             <label for="usernameCadastro">
                 Username:
                 <input 
@@ -21,7 +19,6 @@
                     required
                 >
             </label>
-
              <label for="email">
                 Email:
                 <input 
@@ -31,7 +28,6 @@
                     required
                 >
             </label>
-            
             <label for="passwordCadastro">
                 Password:
                 <input 
@@ -40,12 +36,14 @@
                 name="password" 
                 required>
             </label>
-            
-            <button type="submit" onclick="register()">Register</button>
-
-            <p id="CadastroP">Já tens Conta? <a href="login.html">Login</a></p>
+            <button type="submit">Register</button>
+            <p id="CadastroP">Já tens Conta? <a href="../index.html">Login</a></p>
         </form>
     </div>
+    <script src="./register.js">
+       
+    </script>
+
 </body>
     
 </body>
