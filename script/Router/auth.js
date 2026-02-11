@@ -20,7 +20,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
     }
     
     if (user.refe === "aluno")
-        window.location.href = "../page/layout/aluno.html";
+        window.location.href = "../page/layout/componentsAluno/alunoP.html";
     else if (user.refe === "admin")
         window.location.href = "../page/layout/componentsProfessor/admin.html";
 });
