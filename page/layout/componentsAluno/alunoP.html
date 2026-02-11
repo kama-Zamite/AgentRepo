@@ -858,7 +858,17 @@
                 <div class="user-profile">
                     <img src="https://ui-avatars.com/api/?name=João+Aluno&background=3b82f6&color=fff&rounded=true&bold=true&size=48" alt="Avatar">
                     <div class="user-info">
-                        <span class="user-name">João Aluno</span>
+                        <span class="user-name" id="userNameAluno">João Aluno</span>
+                        <script>
+                        // Exibe o nome do aluno logado na área de usuário
+                        const alunoLogado = localStorage.getItem('alunoLogado');
+                        if (alunoLogado) {
+                            const userNameAluno = document.getElementById('userNameAluno');
+                            if (userNameAluno) {
+                                userNameAluno.textContent = alunoLogado;
+                            }
+                        }
+                        </script>
                         <span class="user-role">🎓 3° Ano - EM</span>
                     </div>
                 </div>
@@ -872,7 +882,17 @@
                     <h1>Dashboard</h1>
                     <p class="subtitle">
                         <i></i>
-                        Bem-vindo de volta, João! Acompanhe seu desempenho acadêmico.
+                        <span id="boasVindas">Bem-vindo de volta! Acompanhe seu desempenho acadêmico.</span>
+                    <script>
+                    // Exibe o nome do aluno logado na mensagem de boas-vindas
+                    const alunoLogado = localStorage.getItem('alunoLogado');
+                    if (alunoLogado) {
+                        const boasVindas = document.getElementById('boasVindas');
+                        if (boasVindas) {
+                            boasVindas.innerHTML = `Bem-vindo de volta, <b>${alunoLogado}</b>! Acompanhe seu desempenho acadêmico.`;
+                        }
+                    }
+                    </script>
                     </p>
                 </div>
                 <div class="topbar-right">
@@ -1177,5 +1197,18 @@
             </div>
         </main>
     </div>
+</main>
+<script>
+// Exemplo: mostrar nome do aluno logado
+const alunoLogado = localStorage.getItem('alunoLogado');
+if (alunoLogado) {
+    // Exemplo: inserir nome no topo
+    const topbar = document.querySelector('.topbar-left h1');
+    if (topbar) {
+        topbar.textContent = `Bem-vindo, ${alunoLogado}!`;
+    }
+    // Aqui você pode personalizar mais dados para cada aluno
+}
+</script>
 </body>
 </html>
