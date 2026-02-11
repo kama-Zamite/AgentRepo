@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos - Painel do Professor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/styleProfessor.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar (mesma estrutura) -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#3B82F6"/>
+                        <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 20V30" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 15L20 20L28 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">EduPortal</span>
+                </div>
+            </div>
+            
+            <nav class="menu">
+                <div class="menu-section">
+                    <span class="menu-label">Menu Principal</span>
+                    <ul>
+                        <li>
+                            <a href="admin.html">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 10L10 3L17 10V17C17 17.5304 16.7893 18.0391 16.4142 18.4142C16.0391 18.7893 15.5304 19 15 19H5C4.46957 19 3.96086 18.7893 3.58579 18.4142C3.21071 18.0391 3 17.5304 3 17V10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 19V10H12V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="turmas.html">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 5C4 4.46957 4.21071 3.96086 4.58579 3.58579C4.96086 3.21071 5.46957 3 6 3H14C14.5304 3 15.0391 3.21071 15.4142 3.58579C15.7893 3.96086 16 4.46957 16 5V17L12 15L8 17V5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Minhas Turmas</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="alunos.html">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 6C13 7.65685 11.6569 9 10 9C8.34315 9 7 7.65685 7 6C7 4.34315 8.34315 3 10 3C11.6569 3 13 4.34315 13 6Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M5 17C5 14.2386 7.23858 12 10 12C12.7614 12 15 14.2386 15 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>Alunos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="notas.html">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3H4C3.44772 3 3 3.44772 3 4V16C3 16.5523 3.44772 17 4 17H16C16.5523 17 17 16.5523 17 16V4C17 3.44772 16.5523 3 16 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 8H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M8 3V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                <span>Lançar Notas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="atividades.html">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M3 9H17" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>Atividades</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="menu-section">
+                    <span class="menu-label">Conta</span>
+                    <ul>
+                        <li>
+                            <a href="configuracoes.html">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 12C11.6569 12 13 10.6569 13 9C13 7.34315 11.6569 6 10 6C8.34315 6 7 7.34315 7 9C7 10.6569 8.34315 12 10 12Z" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9Z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                <span>Configurações</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../login.html" class="logout">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 16L17 12M17 12L13 8M17 12H7M7 16H4C3.44772 16 3 15.5523 3 15V5C3 4.44772 3.44772 4 4 4H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Professor+Silva&background=3B82F6&color=fff&rounded=true&bold=true" alt="Avatar">
+                    <div class="user-info">
+                        <span class="user-name">Prof. Silva</span>
+                        <span class="user-role">Matemática</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1>Alunos</h1>
+                    <p class="subtitle">Gerencie os dados e acompanhe o desempenho dos alunos.</p>
+                </div>
+                <div class="topbar-right">
+                    <div class="search-box">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M19 19L14.65 14.65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <input type="text" placeholder="Buscar alunos...">
+                    </div>
+                    <select class="filter-select">
+                        <option>Todas as turmas</option>
+                        <option>9° Ano A</option>
+                        <option>8° Ano B</option>
+                        <option>7° Ano C</option>
+                    </select>
+                </div>
+            </header>
+            
+            <section class="content">
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Aluno</th>
+                                <th>Turma</th>
+                                <th>Matrícula</th>
+                                <th>Email</th>
+                                <th>Média Geral</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Ana+Silva&background=3B82F6&color=fff&rounded=true" alt="Ana Silva">
+                                        <span>Ana Silva</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table blue">9° Ano A</span></td>
+                                <td>#2024001</td>
+                                <td>ana.silva@escola.com</td>
+                                <td><span class="grade excellent">9.2</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Bruno+Costa&background=10B981&color=fff&rounded=true" alt="Bruno Costa">
+                                        <span>Bruno Costa</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table green">8° Ano B</span></td>
+                                <td>#2024002</td>
+                                <td>bruno.costa@escola.com</td>
+                                <td><span class="grade good">8.5</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Carla+Mendes&background=8B5CF6&color=fff&rounded=true" alt="Carla Mendes">
+                                        <span>Carla Mendes</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table purple">7° Ano C</span></td>
+                                <td>#2024003</td>
+                                <td>carla.mendes@escola.com</td>
+                                <td><span class="grade excellent">9.8</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Daniel+Santos&background=F59E0B&color=fff&rounded=true" alt="Daniel Santos">
+                                        <span>Daniel Santos</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table orange">6° Ano D</span></td>
+                                <td>#2024004</td>
+                                <td>daniel.santos@escola.com</td>
+                                <td><span class="grade average">7.0</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Eduarda+Lima&background=EF4444&color=fff&rounded=true" alt="Eduarda Lima">
+                                        <span>Eduarda Lima</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table red">1° Ano EM</span></td>
+                                <td>#2024005</td>
+                                <td>eduarda.lima@escola.com</td>
+                                <td><span class="grade good">8.3</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Felipe+Rocha&background=3B82F6&color=fff&rounded=true" alt="Felipe Rocha">
+                                        <span>Felipe Rocha</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table blue">9° Ano A</span></td>
+                                <td>#2024006</td>
+                                <td>felipe.rocha@escola.com</td>
+                                <td><span class="grade good">8.7</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Gabriela+Souza&background=10B981&color=fff&rounded=true" alt="Gabriela Souza">
+                                        <span>Gabriela Souza</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table green">8° Ano B</span></td>
+                                <td>#2024007</td>
+                                <td>gabriela.souza@escola.com</td>
+                                <td><span class="grade poor">5.8</span></td>
+                                <td><span class="status-badge warning">Atenção</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="student-info">
+                                        <img src="https://ui-avatars.com/api/?name=Henrique+Alves&background=8B5CF6&color=fff&rounded=true" alt="Henrique Alves">
+                                        <span>Henrique Alves</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge-table purple">7° Ano C</span></td>
+                                <td>#2024008</td>
+                                <td>henrique.alves@escola.com</td>
+                                <td><span class="grade excellent">9.5</span></td>
+                                <td><span class="status-badge active">Ativo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-icon" title="Ver perfil">👁️</button>
+                                        <button class="btn-icon" title="Editar">✏️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>← Anterior</button>
+                    <div class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                        <span>...</span>
+                        <button class="pagination-number">15</button>
+                    </div>
+                    <button class="pagination-btn">Próximo →</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

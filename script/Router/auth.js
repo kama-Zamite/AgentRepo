@@ -22,5 +22,5 @@ document.querySelector("form").addEventListener("submit", function(e) {
     if (user.refe === "aluno")
         window.location.href = "../page/layout/aluno.html";
     else if (user.refe === "admin")
-        window.location.href = "../page/layout/admin.html";
+        window.location.href = "../page/layout/componentsProfessor/admin.html";
 });
