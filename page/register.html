@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../styles/styleCadastro.css">
+</head>
+<body>
+    <div id="containerCadastro">
+ 
+        <h3>Register</h3>
+        
+        <form >
+            <label for="usernameCadastro">
+                Username:
+                <input 
+                    type="text" 
+                    id="usernameCadastro" 
+                    name="username" 
+                    required
+                >
+            </label>
+
+             <label for="email">
+                Email:
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                >
+            </label>
+            
+            <label for="passwordCadastro">
+                Password:
+                <input 
+                type="password" 
+                id="passwordCadastro" 
+                name="password" 
+                required>
+            </label>
+            
+            <button type="submit" onclick="register()">Register</button>
+
+            <p id="CadastroP">Já tens Conta? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+    
+</body>
+</html>
